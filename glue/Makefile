@@ -4,6 +4,7 @@ include ../Makefile.opts
 include ../Makefile.common
 
 all: $(SHLIB_NAME).$(SHLIB_SUFFIX)
+	mkdir -p ../bin/
 	cp $(SHLIB_NAME).$(SHLIB_SUFFIX) ../bin/
 	mv $(SHLIB_NAME).$(SHLIB_SUFFIX) ../build/
 
